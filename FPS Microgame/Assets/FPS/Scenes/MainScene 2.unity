@@ -159,7 +159,7 @@ MonoBehaviour:
   - {fileID: 8038365210694569673, guid: fe6cb114d99a6d04392308c3f54db32c, type: 3}
   moveAmount: 15
   moveAmountZ: 15
-  maxRoom: 20
+  maxRoom: 21
   startTimer: 0.25
 --- !u!4 &129357992
 Transform:

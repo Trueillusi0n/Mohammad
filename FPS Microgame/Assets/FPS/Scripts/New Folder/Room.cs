@@ -49,11 +49,11 @@ public class Room : MonoBehaviour
         {
             rightDoor.SetActive(false);
 
-            if (LvlGeneration.wtf == 1)
+            if (LvlGeneration.door == 1)
             {
                 leftDoor.SetActive(false);
             }
-            if (LvlGeneration.wtf == 3)
+            if (LvlGeneration.door == 3)
             {
                 backDoor.SetActive(false);
             }
@@ -68,12 +68,12 @@ public class Room : MonoBehaviour
         {
             leftDoor.SetActive(false);
 
-            if (LvlGeneration.wtf == 2)
+            if (LvlGeneration.door == 2)
             {
                 rightDoor.SetActive(false);
             }
 
-            if (LvlGeneration.wtf == 3)
+            if (LvlGeneration.door == 3)
             {
                 backDoor.SetActive(false);
             }
@@ -84,23 +84,26 @@ public class Room : MonoBehaviour
         {
             frontDoor.SetActive(false);
 
-            if (LvlGeneration.wtf == 3)
+            if (LvlGeneration.door == 3)
             {
                 backDoor.SetActive(false);
-                if (LvlGeneration.directon == 3)
-                {
+                //if (LvlGeneration.directon == 3)
+                //{
                   
-                    leftDoor.SetActive(false);
+                //    leftDoor.SetActive(false);
 
-                }
+                //}
 
             }
 
-
+            if (LvlGeneration.directon == 1)
+            {
+                leftDoor.SetActive(false);
+            }
 
             if (LvlGeneration.directon == 2)
             {
-                backDoor.SetActive(false);
+                rightDoor.SetActive(false);
             }
 
 
